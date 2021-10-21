@@ -17,3 +17,5 @@ print("ich habs geschafft!")
 print("Das funktioniert wunderbar")
 
 print("Wir sind PYTHON Profis")
+
+print("Das Projekt bestehen wir mit 1.0")
