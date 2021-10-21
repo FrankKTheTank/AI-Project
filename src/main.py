@@ -12,5 +12,4 @@ print(m)
 
 print("Wie geht's?")
 
-
-print("klappt es?")
+print("Das funktioniert wunderbar")
