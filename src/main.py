@@ -11,3 +11,5 @@ m = "hello"
 print(m)
 
 print("Wie geht's?")
+
+print("Das funktioniert wunderbar")
