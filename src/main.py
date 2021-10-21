@@ -28,3 +28,7 @@ e = x * w / q
 
 print(e)
 
+k = "hallo"
+l = "gruppenmitglieder"
+
+print(k, l)
