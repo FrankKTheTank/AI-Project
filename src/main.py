@@ -17,3 +17,8 @@ print("ich habs geschafft!")
 print("Das funktioniert wunderbar")
 
 print("Wir sind PYTHON Profis")
+
+x= 10
+y= 12
+
+print (x+y)
