@@ -12,4 +12,8 @@ print(m)
 
 print("Wie geht's?")
 
+print("ich habs geschafft!")
+
 print("Das funktioniert wunderbar")
+
+print("Wir sind PYTHON Profis")
