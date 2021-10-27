@@ -51,12 +51,12 @@ if __name__ == "__main__":
     print(mydata)
     print("___________________________________________________")
 
-
+"""
     imputer = KNNImputer(n_neighbors=3)
     data_imputed_knn = mydata.copy()
     myArray = imputer.fit_transform(data_imputed_knn.loc[:,myList])
 data_imputed_knn.loc[:,myList] = myArray
-print(myArray)
+print(myArray[0][1])                       """
 
 
 
