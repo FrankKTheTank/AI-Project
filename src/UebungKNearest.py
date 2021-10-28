@@ -44,34 +44,13 @@ if __name__ == "__main__":
 
     myList = list(mydata)
     myList.remove('Species')
-    print("------------------------------------------------")
-    print(mydata)
-    print("------------------------------------------------")
-    mydata = missingValueMean(mydata)
-    print(mydata)
-    print("___________________________________________________")
 
-"""
+    print(mydata)
+
     imputer = KNNImputer(n_neighbors=3)
     data_imputed_knn = mydata.copy()
     myArray = imputer.fit_transform(data_imputed_knn.loc[:,myList])
-data_imputed_knn.loc[:,myList] = myArray
-print(myArray[0][1])                       """
+    data_imputed_knn.loc[:,myList] = myArray
 
-
-
-"""" for iCol in features:
-
-        distance = missingValueRms(mydata2, mydata, myList)
-        print(distance) """
-
-
-"""
-    print(mydata.isna())
-
-    mydata = dropValue(mydata)
-
-    print(mydata.shape[0])
-
-    print(mydata.isna())   """
+    print(myArray)
 
