@@ -1,6 +1,6 @@
 import tensorflow as tf
 import streamlit as st
-class_names =['x', 'y']
+
 
 def load_model():
   model=tf.keras.models.load_model('../MyModel/testModel')
