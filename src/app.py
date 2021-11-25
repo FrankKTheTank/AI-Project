@@ -9,7 +9,7 @@ with st.spinner('Model is being loaded..'):
   model=load_model()
 
 st.write("""
-         # Flower Classification
+         # Legobrick Classification
          """
          )
 

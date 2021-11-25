@@ -2,19 +2,10 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from tensorflow import keras
 import numpy as np
-import cv2
 import os
 
-
-#img = image.load_img("C:/Users/Frank/Desktop/Pics/Defekt/yellowBrick.PNG")
-#plt.imshow(img)
-#plt.show()
-
 #print(cv2.imread("C:/Users/Frank/Desktop/Pics/yellowBrick.PNG").shape)
-
-
 train = ImageDataGenerator(rescale=1/255)
 validation = ImageDataGenerator(rescale=1/255)
 
