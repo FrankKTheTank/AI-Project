@@ -9,10 +9,10 @@ import os
 train = ImageDataGenerator(rescale=1/255)
 validation = ImageDataGenerator(rescale=1/255)
 
-trainDataset = train.flow_from_directory('C:/Users/Frank/Desktop/Pics/3003 Brick 2x2',
+trainDataset = train.flow_from_directory('C:/Users/Frank/Desktop/Pics/Grau 2x2',
                                          target_size=(200, 200), batch_size=3, class_mode='binary')
 
-validationDataset = validation.flow_from_directory('C:/Users/Frank/Desktop/Pics/3003 Brick 2x2',
+validationDataset = validation.flow_from_directory('C:/Users/Frank/Desktop/Pics/Grau 2x2',
                                          target_size=(200, 200), batch_size=3, class_mode='binary')
 
 #print(trainDataset.class_indices)
