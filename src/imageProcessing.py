@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 from scipy import ndimage
 import cv2
 
-img = cv2.imread('C:/Users/Frank/Desktop/Pics/3003 Brick 2x2/Oben/0001.png')
+img = cv2.imread('C:/Users/Frank/Desktop/Pics/Test/0001.png')
 print(cv2.imshow('Image',img))
 plt.imshow(img)
 plt.show()
