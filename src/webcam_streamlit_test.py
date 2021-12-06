@@ -3,10 +3,10 @@ import cv2
 from PIL import Image, ImageOps
 from webcam import webcam
 import webcam_streamlit_layout as layout
-img2 = Image.open(('HS-OS-Logo-Standard-rgb.jpg'))
+img2 = Image.open(('../logos/HS-OS-Logo-Standard-rgb.jpg'))
 
 #from streamlit_webrtc import webrtc_streamer
-img = Image.open('Minion_Logo.PNG')
+img = Image.open('../logos/Minion_Logo.PNG')
 st.set_page_config(page_title="LEGO Classification", layout='wide')
 
 
