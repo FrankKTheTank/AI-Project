@@ -6,9 +6,8 @@ from webcam import webcam
 #img2 = Image.open(('HS-OS-Logo-Standard-rgb.jpg'))
 
 #from streamlit_webrtc import webrtc_streamer
-img = Image.open('Minion_Logo.PNG')
-st.set_page_config(page_title="LEGO Classification",
-                   page_icon=img, layout='wide')
+#img = Image.open('Minion_Logo.PNG')
+st.set_page_config(page_title="LEGO Classification", layout='wide')
 
 
 def main():
