@@ -17,7 +17,6 @@ def main():
         col1.image(img2, use_column_width=True)
         col3.image(img, use_column_width=True)
     layout.header("LEGO Classification")
-    st.title("LEGO Classification")
     menu = ["Home","Image Uploader","Webcam Uploader", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
 
