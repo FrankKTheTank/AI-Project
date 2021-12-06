@@ -2,22 +2,22 @@ import streamlit as st
 import cv2
 from PIL import Image, ImageOps
 from webcam import webcam
-#import webcam_streamlit_layout as layout
-#img2 = Image.open(('HS-OS-Logo-Standard-rgb.jpg'))
+import webcam_streamlit_layout as layout
+img2 = Image.open(('HS-OS-Logo-Standard-rgb.jpg'))
 
 #from streamlit_webrtc import webrtc_streamer
-#img = Image.open('Minion_Logo.PNG')
+img = Image.open('Minion_Logo.PNG')
 st.set_page_config(page_title="LEGO Classification", layout='wide')
 
 
 def main():
     #layout.Logo_HS()
-    #with st.container():
-     #   col1, col2, col3 = st.columns([0.5,3.5,0.25])
-      #  col1.image(img2, use_column_width=True)
-       # col3.image(img, use_column_width=True)
-    #layout.header("LEGO Classification")
-    #st.title("LEGO Classification")
+    with st.container():
+        col1, col2, col3 = st.columns([0.5,3.5,0.25])
+        col1.image(img2, use_column_width=True)
+        col3.image(img, use_column_width=True)
+    layout.header("LEGO Classification")
+    st.title("LEGO Classification")
     menu = ["Home","Image Uploader","Webcam Uploader", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
 
