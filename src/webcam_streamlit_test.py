@@ -29,8 +29,20 @@ def main():
         if file is None:
             st.text("Please upload an image file")
         else:
-            image = Image.open(file)
-            st.image(image, use_column_width=True)
+
+            with st.container():
+                col1, col2, col3 = st.columns([2,1,2])
+                col2.write("Preview of your choosen image")
+                image = Image.open(file)
+                col2.image(image,width=400, use_column_width=True)
+
+            with st.container():
+                col1, col2, col3 = st.columns([3,0.5,3])
+                layout.button()
+                if col2.button("identify"):
+                    col2.write("Got it")
+
+
     elif choice == "Webcam Uploader":
         st.subheader("Webcam Uploader")
 

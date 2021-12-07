@@ -4,6 +4,16 @@ from datetime import date # used in write_image for file name
 import time # used in write_image for file name
 import cv2 # used in write_image for writing images
 
+def button():
+    m = st.markdown("""
+    <style>
+    div.stButton > button:first-child {
+        background-color: #009ee3; color: #ffffff; text-align:center;
+    }
+    div.stButton > button:hover {
+        background-color:#00ff00; color: #fffff; text-align:center;
+    }
+    </style>""",unsafe_allow_html=True)
 
 def header(text):
     html_temp = f"""
