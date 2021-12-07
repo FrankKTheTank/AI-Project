@@ -53,7 +53,6 @@ for i in rotationList:
 drehung90 = im.transpose(Image.ROTATE_90) #Drehung gegen den Uhrzeigersinn um 90 Grad
 drehung180 = im.transpose(Image.ROTATE_180) #Drehung gegen den Uhrzeigersinn um 180 Grad
 drehung270 = im.transpose(Image.ROTATE_270) #Drehung gegen den Uhrzeigersinn um 270 Grad
-
 spiegelung = im.transpose(Image.FLIP_LEFT_RIGHT) #Spiegelung
 umdrehung = im.transpose(Image.FLIP_TOP_BOTTOM) #auf den Kopf gedreht
 drehungfrei1 = im.rotate(5) #gewünschte Gradzahl der Drehung eingeben
