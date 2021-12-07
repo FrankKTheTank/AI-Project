@@ -25,7 +25,7 @@ def main():
 
     elif choice == "Image Uploader":
         st.subheader("Image Uploader")
-        file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
+        file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png", "jpeg"])
         if file is None:
             st.text("Please upload an image file")
         else:

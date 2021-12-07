@@ -5,15 +5,16 @@ from PIL import ImageFilter #Filter aufsetzen
 from PIL import ImageOps
 import os, sys
 
-input = "testbild.jpg" #Dateiname des Bildes
+input = "C:/Users/Frank/Desktop/Lego2/Defekt/JPEG-Bild 2.jpeg" #Dateiname des Bildes
 im = Image.open(input)
 #size = (450, 450)
 
-f, e =os.path.splitext(input)
-output = "liladefekt" + ".jpg"
+#f, e =os.path.splitext(input)
+#output = "legodefekt" + ".jpg"
+#print(output)
 
-input1 = "liladefekt.jpg"
-im = Image.open(input1)
+#input1 = "legodefekt.jpg"
+#im = Image.open(input)
 #width = im.size[0]
 #height = im.size[1]
 #size = (1000, 1000)
@@ -33,13 +34,26 @@ abschnitt = im.crop(cropbox) # Erstellt den Abschnitt
 
 #Speichern des Abschnitts
 
-abschnitt.save("testbildabschnitt1.jpg")
+abschnitt.save("C:/Users/Frank/Desktop/Pics/testbild.jpg")
 
 #Drehung erstellen
 
+rotationList = [Image.ROTATE_90, Image.ROTATE_180, Image.ROTATE_270]
+
+i = 0
+
+for i in rotationList:
+    drehung = im.transpose(i)
+    drehung.save("C:/Users/Frank/Desktop/Pics/testbild" + str(i) + ".jpg")
+    i += 1
+
+
+
+"""
 drehung90 = im.transpose(Image.ROTATE_90) #Drehung gegen den Uhrzeigersinn um 90 Grad
 drehung180 = im.transpose(Image.ROTATE_180) #Drehung gegen den Uhrzeigersinn um 180 Grad
 drehung270 = im.transpose(Image.ROTATE_270) #Drehung gegen den Uhrzeigersinn um 270 Grad
+
 spiegelung = im.transpose(Image.FLIP_LEFT_RIGHT) #Spiegelung
 umdrehung = im.transpose(Image.FLIP_TOP_BOTTOM) #auf den Kopf gedreht
 drehungfrei1 = im.rotate(5) #gewünschte Gradzahl der Drehung eingeben
@@ -109,7 +123,7 @@ drehungfrei64 = im.rotate(335) #gewünschte Gradzahl der Drehung eingeben
 drehungfrei65 = im.rotate(340) #gewünschte Gradzahl der Drehung eingeben
 drehungfrei66 = im.rotate(345) #gewünschte Gradzahl der Drehung eingeben
 drehungfrei67 = im.rotate(350) #gewünschte Gradzahl der Drehung eingeben
-drehungfrei68 = im.rotate(355) #gewünschte Gradzahl der Drehung eingeben
+drehungfrei68 = im.rotate(355) #gewünschte Gradzahl der Drehung eingeben 
 
 
 #Abspeichern der Abschnitte und der Drehungen
@@ -186,7 +200,7 @@ drehungfrei64.save("testbildabschnitt70.jpg")
 drehungfrei65.save("testbildabschnitt71.jpg")
 drehungfrei66.save("testbildabschnitt72.jpg")
 drehungfrei67.save("testbildabschnitt73.jpg")
-drehungfrei68.save("testbildabschnitt74.jpg")
+drehungfrei68.save("testbildabschnitt74.jpg") """
 
 
 
