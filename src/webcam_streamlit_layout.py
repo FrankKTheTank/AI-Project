@@ -1,6 +1,24 @@
 import streamlit as st
 import base64
 
+def Logos():
+
+    Logo_HS = open("../logos/HS-OS-Logo-Standard-rgb.jpg", "rb")
+    content_read_Logo_HS = Logo_HS.read()
+    data_url_Logo_HS = base64.b64encode(content_read_Logo_HS).decode("utf-8")
+    Logo_HS.close()
+
+    Logo_Minion = open("../logos/Minion_Logo.PNG", "rb")
+    content_read_Logo_Minion = Logo_Minion.read()
+    data_url_Logo_Minion = base64.b64encode(content_read_Logo_Minion).decode("utf-8")
+    Logo_Minion.close()
+
+    st.markdown(
+        f""" 
+        <div>
+        <img src="data:image/gif;base64,{data_url_Logo_HS}" width="200" style="margin:5px" align="left">
+        <img src="data:image/gif;base64,{data_url_Logo_Minion}" width="100" style="margin:5px" align="right">
+        </div>""",unsafe_allow_html=True)
 
 def button():
     m = st.markdown("""
