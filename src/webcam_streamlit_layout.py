@@ -32,7 +32,7 @@ def button2():
     </style>""",unsafe_allow_html=True)
 
 def Loading_Spinner_GIF():
-    GIF_file = open("Minion_Loading.gif", "rb")
+    GIF_file = open("../logos/Minion_Loading.gif", "rb")
     content_read = GIF_file.read()
     data_url = base64.b64encode(content_read).decode("utf-8")
     GIF_file.close()

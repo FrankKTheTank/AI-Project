@@ -6,15 +6,14 @@ from PIL import Image
 # es gibt eine neue Version von streamlit --> auf dem Server aktualisieren
 
 def main_structure():
-    img = Image.open('Minion_Logo.PNG')
-    img2 = Image.open('HS-OS-Logo-Standard-rgb.jpg')
+    img = Image.open('../logos/Minion_Logo.PNG')
+    img2 = Image.open('../logos/HS-OS-Logo-Standard-rgb.jpg')
     with st.container():
-        col1, col2, col3 = st.columns([1,2.5,0.5])
-        col1.image(img2, use_column_width=True)
-        col3.image(img, use_column_width=True)
+        col1, col2, col3 = st.columns([3,2.5,2])
+        col1.image(img2,width=1000, use_column_width=True)
+        col3.image(img, width=1000, use_column_width=True)
 
 
-    st.title("HEllo World")
     layout.header("LEGO Classification")
     menu = ["Home","Image Uploader","Webcam Uploader", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
