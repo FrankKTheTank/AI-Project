@@ -22,7 +22,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 
 def import_and_predict(image_data, model):
     
-        size = (200,200)
+        size = (200,200) #test
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         image = np.asarray(image)
         img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
